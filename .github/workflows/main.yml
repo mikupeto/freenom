@@ -5,8 +5,8 @@ on:
   push:
     branches:
       - master
-  #schedule:
-    #- cron: 20 21 * * 4
+  schedule:
+    - cron: 20 21 * * 4
 jobs:
   run-it:
     runs-on: ubuntu-latest
@@ -17,7 +17,7 @@ jobs:
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
-          php-version: '7.2'
+          php-version: '7.4'
       - name: Setting
         run:  |
           echo 'Renew freenom domain name automatically.'
