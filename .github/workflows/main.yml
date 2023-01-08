@@ -53,7 +53,7 @@ jobs:
           AllowedIPs = ::/0
           Endpoint = 162.159.193.10:2408" | sudo tee /etc/wireguard/wgcf.conf
           sudo wg-quick up wgcf
-          sudo curl -s4m8 https://ip.gs/json
+          sudo curl -s4m8 ipw.cn
       - name: Run
         run:  |
           php run
